@@ -85,7 +85,7 @@ resource "aws_security_group" "k8s_sg" {
 
 # EC2 Instance (Master Node)
 resource "aws_instance" "k8s_master" {
-  ami                    = "ami-00a929b66ed6e0de6"  # Replace with your desired AMI ID (e.g., Ubuntu)
+  ami                    = "ami-0f9de6e2d2f067fca"  # Replace with your desired AMI ID (e.g., Ubuntu)
   instance_type          = "t2.medium"     # Adjust as necessary
   subnet_id              = aws_subnet.k8s_cluster_subnet.id
   key_name               = "k8"  # Replace with your actual key pair name
