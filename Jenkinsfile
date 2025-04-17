@@ -2,6 +2,7 @@ pipeline {
     agent any
 
     environment {
+        WORKSPACE = '/mnt/jenkins_home/workspace'
         TERRAFORM_VERSION = '1.3.6'
         TF_VAR_AWS_REGION = 'us-east-1'
     }
