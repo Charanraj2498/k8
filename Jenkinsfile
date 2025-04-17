@@ -10,7 +10,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 script {
-                    git 'https://your-repository-url.git'
+                    git 'https://github.com/Charanraj2498/k8.git'
                 }
             }
         }
